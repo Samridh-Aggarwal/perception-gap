@@ -1,0 +1,14 @@
+# perception_gap.ipynb
+torch>=2.0
+torchvision>=0.15
+timm>=0.9.0
+transformers>=4.45          # PixtralVisionModel
+huggingface_hub>=0.24
+safetensors>=0.4
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+
+# prithvi.ipynb only, fresh runtime required
+torchgeo>=0.6
+terratorch==1.2.10          # pinned: the backbone's returned layer list is version dependent

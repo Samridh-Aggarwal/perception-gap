@@ -1,0 +1,56 @@
+model,perturbation,kind,mean_shift
+DINOv2 ViT-S/14,occlude_center,meaningful,0.16741284728050232
+DINOv2 ViT-S/14,scramble_patches,meaningful,0.27565476298332214
+DINOv2 ViT-S/14,rotate_90,cosmetic,0.20592452585697174
+DINOv2 ViT-S/14,flip_vertical,cosmetic,0.1606336534023285
+DINOv2 ViT-S/14,matched_noise,cosmetic,0.014584396965801716
+DINOv2 ViT-B/14,occlude_center,meaningful,0.159331277012825
+DINOv2 ViT-B/14,scramble_patches,meaningful,0.2969295382499695
+DINOv2 ViT-B/14,rotate_90,cosmetic,0.1903979480266571
+DINOv2 ViT-B/14,flip_vertical,cosmetic,0.14364328980445862
+DINOv2 ViT-B/14,matched_noise,cosmetic,0.014253267087042332
+DINOv1 ViT-B/16,occlude_center,meaningful,0.20995686948299408
+DINOv1 ViT-B/16,scramble_patches,meaningful,0.3793399930000305
+DINOv1 ViT-B/16,rotate_90,cosmetic,0.2059956192970276
+DINOv1 ViT-B/16,flip_vertical,cosmetic,0.15155228972434998
+DINOv1 ViT-B/16,matched_noise,cosmetic,0.02352794073522091
+ViT-B/32,occlude_center,meaningful,0.10250665992498398
+ViT-B/32,scramble_patches,meaningful,0.47813910245895386
+ViT-B/32,rotate_90,cosmetic,0.25172871351242065
+ViT-B/32,flip_vertical,cosmetic,0.1788124144077301
+ViT-B/32,matched_noise,cosmetic,0.0015302967512980103
+ResNet-50,occlude_center,meaningful,0.13678035140037537
+ResNet-50,scramble_patches,meaningful,0.27608394622802734
+ResNet-50,rotate_90,cosmetic,0.19569511711597443
+ResNet-50,flip_vertical,cosmetic,0.14707595109939575
+ResNet-50,matched_noise,cosmetic,0.09675797820091248
+ConvNeXt-Tiny,occlude_center,meaningful,0.13927960395812988
+ConvNeXt-Tiny,scramble_patches,meaningful,0.35535991191864014
+ConvNeXt-Tiny,rotate_90,cosmetic,0.2552253007888794
+ConvNeXt-Tiny,flip_vertical,cosmetic,0.16854818165302277
+ConvNeXt-Tiny,matched_noise,cosmetic,0.11136692017316818
+EfficientNet-B0,occlude_center,meaningful,0.08455818146467209
+EfficientNet-B0,scramble_patches,meaningful,0.444061279296875
+EfficientNet-B0,rotate_90,cosmetic,0.22841908037662506
+EfficientNet-B0,flip_vertical,cosmetic,0.13859227299690247
+EfficientNet-B0,matched_noise,cosmetic,0.05569889023900032
+MAE ViT-B/16,occlude_center,meaningful,0.06869032979011536
+MAE ViT-B/16,scramble_patches,meaningful,0.11567924171686172
+MAE ViT-B/16,rotate_90,cosmetic,0.03690673038363457
+MAE ViT-B/16,flip_vertical,cosmetic,0.030941350385546684
+MAE ViT-B/16,matched_noise,cosmetic,0.04937034472823143
+I-JEPA ViT-H/14,occlude_center,meaningful,0.3589983582496643
+I-JEPA ViT-H/14,scramble_patches,meaningful,0.21196448802947998
+I-JEPA ViT-H/14,rotate_90,cosmetic,0.2251114845275879
+I-JEPA ViT-H/14,flip_vertical,cosmetic,0.17022119462490082
+I-JEPA ViT-H/14,matched_noise,cosmetic,0.024183902889490128
+I-JEPA ViT-H/14 (22k),occlude_center,meaningful,0.5576348900794983
+I-JEPA ViT-H/14 (22k),scramble_patches,meaningful,0.2135373204946518
+I-JEPA ViT-H/14 (22k),rotate_90,cosmetic,0.19873622059822083
+I-JEPA ViT-H/14 (22k),flip_vertical,cosmetic,0.11527475714683533
+I-JEPA ViT-H/14 (22k),matched_noise,cosmetic,0.07556476444005966
+Pixtral-ViT,occlude_center,meaningful,0.2529118061065674
+Pixtral-ViT,scramble_patches,meaningful,0.46036651730537415
+Pixtral-ViT,rotate_90,cosmetic,0.309701532125473
+Pixtral-ViT,flip_vertical,cosmetic,0.2864469885826111
+Pixtral-ViT,matched_noise,cosmetic,0.026888040825724602

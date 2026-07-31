@@ -1,0 +1,2 @@
+model,objective,data,terratorch,signal,cosmetic,sr,ci_low,ci_high,inert
+Prithvi-EO-1.0-100M,reconstruction (satellite-native),HLS 6-band,1.2.10,0.052755046635866165,0.1481202244758606,0.262625888910556,0.23500791747774644,0.2909360171824383,False
