@@ -66,7 +66,7 @@ Everything runs on a single T4, which is what Colab gives away. Expect the downl
 
 ## run
 
-`perception_gap.ipynb` is five cells: install, the experiment, the figure, the readout diagnostic, and the all-but-the-top sweep. It writes `results/sr_by_model.csv` and `results/shift_by_perturbation.csv`.
+`perception-gap.ipynb` is five cells: install, the experiment, the figure, the readout diagnostic, and the all-but-the-top sweep. It writes `results/sr_by_model.csv` and `results/shift_by_perturbation.csv`.
 
 `prithvi.ipynb` is four cells and needs a fresh runtime, because terratorch swaps numpy under a running kernel and only a restart clears it. The first cell installs and then kills the kernel on purpose. Run it, wait for the crash, then run the rest without touching the first cell again.
 
@@ -92,7 +92,7 @@ d_raw = d_centered / (rho^2 + 1)
 
 A dominant shared direction compresses every shift by the same factor. Signal and noise get compressed equally, so SR itself barely changes, but the absolute shifts can be squashed far enough to hit the measurement floor, at which point the ratio is noise over noise and means nothing. That is exactly what happened. MAE and Pixtral-ViT both came back with shifts near zero and got flagged inert. Both were fine once the mean was removed. MAE's signal went from 0.004 to 0.092, a factor of 22.
 
-Cell 3 checks this, measured rather than assumed:
+The readout diagnostic checks this, measured rather than assumed:
 
 | model | rho^2 | predicted 1/(rho^2+1) | observed | SR raw | SR centered |
 |---|---|---|---|---|---|
@@ -105,7 +105,7 @@ Centering is the first step of all-but-the-top ([Mu and Viswanath 2018](https://
 
 ## how far to strip
 
-Cell 5 runs that test, and the answer is that the mean is where you stop.
+The all-but-the-top sweep runs that test, and the answer is that the mean is where you stop.
 
 Stripping the leading principal directions as well as the mean does recover more. MAE's single top direction holds 81.6% of the variance across scenes while carrying only 5.9% of the perturbation displacement, and two directions hold 93.1% against 7.2%. That is what a rogue dimension looks like and it accounts for the factor of three above: the effective bias is the mean plus roughly one direction, and once you count it that way the predicted and observed compression cross over between k=1 and k=2.
 
